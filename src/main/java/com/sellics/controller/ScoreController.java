@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @RestController
 @RequestMapping("v1/score")
 public class ScoreController {
@@ -19,7 +21,7 @@ public class ScoreController {
     }
 
     @GetMapping("/{keyword}")
-    public ScoreDTO getScore(@PathVariable String keyword){
+    public ScoreDTO getScore(@PathVariable String keyword) throws IOException {
         return scoreService.getScore(keyword);
     }
 }
