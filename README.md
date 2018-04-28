@@ -19,4 +19,5 @@ The project is based on the following technologies:
 * browse http://localhost:8080 
 * Open the score-controller link in the UI and insert the keyword 
 * controller will return keyword and its score
+* for simplicity you can also run the jar file in the jar folder with the command: java -jar amazonsearchvolume.jar
 
