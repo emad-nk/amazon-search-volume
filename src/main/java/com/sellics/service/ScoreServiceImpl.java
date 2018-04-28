@@ -7,12 +7,9 @@ import com.sellics.exception.MapperException;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.net.UnknownHostException;
 import java.util.List;
 
 @Service
