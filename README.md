@@ -14,6 +14,8 @@ The project is based on the following technologies:
 * When keyword is sent to the backend, it is divided into characters. It will try with each character by appending them to find the exact keyword in amazon api response, the sooner it finds the keyword in the response the more score that keyword gets. 
 * Response size from amazon also plays a role in the calculation.
 
+* **Note:** The scores in the integration test might change based on their popularity in amazon and some tests might fail in the future.
+
 ### How to run it? ###
 
 * Clone the repository in your local pc, run the AmazonSearchVolumeApplication
