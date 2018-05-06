@@ -1,6 +1,6 @@
 package com.sellics.controller;
 
-import com.sellics.AmazonsearchvolumeApplication;
+import com.sellics.AmazonSearchVolumeApplication;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AmazonsearchvolumeApplication.class)
+@SpringBootTest(classes = AmazonSearchVolumeApplication.class)
 @ComponentScan("com.sellics")
 @EnableAutoConfiguration
 @WebAppConfiguration

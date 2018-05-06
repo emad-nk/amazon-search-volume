@@ -3,7 +3,6 @@ package com.sellics;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -13,10 +12,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
-public class AmazonsearchvolumeApplication {
+public class AmazonSearchVolumeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AmazonsearchvolumeApplication.class, args);
+        SpringApplication.run(AmazonSearchVolumeApplication.class, args);
     }
 
     @Bean
