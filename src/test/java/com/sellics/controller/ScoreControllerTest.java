@@ -59,7 +59,7 @@ public class ScoreControllerTest {
         mockMvc.perform(get(URL + keyword)
                 .contentType(contentType))
                 .andExpect(jsonPath("$.keyword", is("linux")))
-                .andExpect(jsonPath("$.score", is(100)));
+                .andExpect(jsonPath("$.score", is(20)));
     }
 
     @Test
@@ -68,11 +68,29 @@ public class ScoreControllerTest {
         mockMvc.perform(get(URL + keyword)
                 .contentType(contentType))
                 .andExpect(jsonPath("$.keyword", is("knys")))
-                .andExpect(jsonPath("$.score", is(30)));
+                .andExpect(jsonPath("$.score", is(0)));
     }
 
     @Test
     public void getScoreTest3() throws Exception {
+        String keyword = "/iphone charger";
+        mockMvc.perform(get(URL + keyword)
+                .contentType(contentType))
+                .andExpect(jsonPath("$.keyword", is("iphone charger")))
+                .andExpect(jsonPath("$.score", is(100)));
+    }
+
+    @Test
+    public void getScoreTest4() throws Exception {
+        String keyword = "/ipad charger";
+        mockMvc.perform(get(URL + keyword)
+                .contentType(contentType))
+                .andExpect(jsonPath("$.keyword", is("ipad charger")))
+                .andExpect(jsonPath("$.score", is(75)));
+    }
+
+    @Test
+    public void getScoreTest5() throws Exception {
         String keyword = "/gohii";
         mockMvc.perform(get(URL + keyword)
                 .contentType(contentType))
